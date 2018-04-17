@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/orange_background"
+    android:layout_height="200dp">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+   android:layout_marginLeft="40dp"
+    android:layout_marginTop="30dp"
+
+    android:src="@drawable/ic_account_circle_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sahil Goyal"
+        android:textSize="22sp"
+        android:id="@+id/tvname"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9915410702"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:id="@+id/tvmobile"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+</LinearLayout>
