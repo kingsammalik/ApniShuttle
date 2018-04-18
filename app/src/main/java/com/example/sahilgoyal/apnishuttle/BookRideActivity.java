@@ -403,7 +403,7 @@ public class BookRideActivity extends AppCompatActivity implements PostDispatchs
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
 
 
-        BookTimingAdapter myRidesAdapter = new BookTimingAdapter(BookRideActivity.this, myRidesModelList);
+        BookTimingAdapter myRidesAdapter = new BookTimingAdapter(BookRideActivity.this, myRidesModelList,BookRideActivity.this);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(BookRideActivity.this);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);

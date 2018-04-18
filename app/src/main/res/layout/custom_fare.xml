@@ -2,14 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_marginLeft="@dimen/dimen_10dp"
-    android:background="@drawable/balck_rect"
     android:id="@+id/rootLayout"
     android:layout_height="wrap_content">
-<TextView
+<!--<TextView
     android:layout_width="wrap_content"
-    android:text="9:40 AM"
+    android:text=""
     android:id="@+id/tvSource"
     android:padding="5dp"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content" />-->
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/timegrp"
+        android:padding="5dp"
+        android:button="@drawable/toggle_btn"
+        android:background="@drawable/white_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RadioGroup>
 
 </LinearLayout>

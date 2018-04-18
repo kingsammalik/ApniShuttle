@@ -33,6 +33,7 @@ public class RegisterFragment extends Fragment implements PostDispatchs {
     EditText etConfirmPassowrd;
     EditText etLastName;
     Button register;
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
     @Nullable
     @Override
@@ -64,11 +65,11 @@ public class RegisterFragment extends Fragment implements PostDispatchs {
         } else if (TextUtils.isEmpty(etLastName.getText())) {
 
             etLastName.setError("Enter LastName");
-        } else if (TextUtils.isEmpty(etMobile.getText())) {
+        } else if (TextUtils.isEmpty(etMobile.getText()) || etMobile.getText().toString().length()!=10) {
 
             etMobile.setError("Enter Mobile");
-        } else if (TextUtils.isEmpty(etEmail.getText())) {
 
+        } else if (TextUtils.isEmpty(etEmail.getText()) || !etEmail.getText().toString().trim().matches(emailPattern)) {
             etEmail.setError("Enter Email");
         } else if (TextUtils.isEmpty(etPassword.getText())) {
 

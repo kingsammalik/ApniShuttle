@@ -65,6 +65,9 @@ public class MyRideActivity extends AppCompatActivity implements GetDispatchs {
     @Override
     public void apiSuccess(Object body, ResponseTypes response) {
 
+
+        System.out.println(body.toString());
+
         List<MyRidesModel> myRidesModelList = (List<MyRidesModel>) body;
 
         setAdapter(myRidesModelList);

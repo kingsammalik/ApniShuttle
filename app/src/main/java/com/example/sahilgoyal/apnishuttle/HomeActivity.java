@@ -18,6 +18,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -359,7 +360,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             }
         } else if (requestCode == 2) {
             if (resultCode == Activity.RESULT_OK) {
+                InputMethodManager inputMethodManager = (InputMethodManager)
+                        getSystemService(Activity.INPUT_METHOD_SERVICE);
+                // Find the currently focused view, so we can grab the correct window
+                // token from it.
+                View view = getCurrentFocus();
+                // If no view currently has focus, create a new one, just so we can grab
+                // a window token from it
 
+                inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
                 value = true;
                 String place = data.getStringExtra("place");
                 Double lat = data.getDoubleExtra("lat", 0);

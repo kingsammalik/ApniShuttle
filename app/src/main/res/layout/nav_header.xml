@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sahil Goyal"
+        android:text=""
         android:textSize="22sp"
         android:id="@+id/tvname"
         android:textColor="@android:color/white"
@@ -28,7 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="9915410702"
+        android:text=""
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:id="@+id/tvmobile"
